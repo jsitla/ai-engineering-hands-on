@@ -59,6 +59,10 @@ Model names and prices change often. The defaults in `llm.py` were checked on th
 
 More episodes are added as they are published.
 
+## Running every demo at once (Windows)
+
+`tools\run_all.ps1` runs every script and saves the output to `runs\` (that's how the outputs in the videos were recorded).
+
 ## Safety
 
 - Never put API keys in your code or commit your `.env` file (it is already in `.gitignore`).

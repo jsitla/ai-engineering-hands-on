@@ -1,5 +1,5 @@
 """
-Episode 6 - a vague prompt vs a clear prompt with examples.
+Episode 6 - a vague prompt vs a clear prompt vs a clear prompt with examples.
 We score both on the same ten messages.
 """
 from llm import ask
@@ -9,7 +9,9 @@ VAGUE = "What is this customer message about?"
 
 CLEAR = f"""You sort customer messages for an online shop.
 Reply with exactly one word from this list: {", ".join(LABELS)}.
-No other text.
+No other text."""
+
+CLEAR_WITH_EXAMPLES = CLEAR + """
 
 Examples:
 Message: Where is my order? -> shipping
@@ -30,4 +32,5 @@ def score(system_prompt: str, name: str) -> None:
 
 
 score(VAGUE, "Vague prompt")
-score(CLEAR, "Clear prompt + examples")
+score(CLEAR, "Clear prompt")
+score(CLEAR_WITH_EXAMPLES, "Clear prompt + examples")

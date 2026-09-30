@@ -4,7 +4,7 @@ Type your message and press Enter. Type 'quit' to stop.
 """
 from llm import MODEL, PROVIDER, get_client
 
-MAX_TURNS = 10  # keep only the last 10 exchanges so we never overflow the context window
+MAX_TURNS = 10  # keep only the last 10 exchanges, so the history stays small
 
 client = get_client()
 system = {"role": "system", "content": "You are a helpful, friendly assistant. Keep answers short."}
@@ -16,7 +16,7 @@ while True:
     if text.lower() in {"quit", "exit"}:
         break
     history.append({"role": "user", "content": text})
-    history = history[-MAX_TURNS * 2:]  # one exchange = your message + its answer
+    history = history[-(MAX_TURNS * 2 - 1):]  # earlier exchanges + your new message
 
     response = client.chat.completions.create(model=MODEL, messages=[system] + history)
     answer = response.choices[0].message.content

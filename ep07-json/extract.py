@@ -2,7 +2,8 @@
 Episode 7 - turn messy messages into data your code can use.
 
 Attempt 1: just ask for JSON in the prompt.
-Attempt 2: give the model a JSON schema (structured output).
+Attempt 2: JSON mode (the answer must be valid JSON).
+Attempt 3: give the model a JSON schema (structured output).
 We count how many answers our code can actually read.
 """
 import json
@@ -47,7 +48,7 @@ def run(name: str, **extra) -> None:
         r = client.chat.completions.create(
             model=MODEL,
             messages=[
-                {"role": "system", "content": "Extract the order as JSON with the keys customer, product, color, quantity, city."},
+                {"role": "system", "content": "Extract the customer, product, color, quantity and city from the order, as JSON."},
                 {"role": "user", "content": order},
             ],
             temperature=0,
@@ -62,6 +63,7 @@ def run(name: str, **extra) -> None:
 
 
 run("Just asking for JSON")
+run("JSON mode", response_format={"type": "json_object"})
 run(
     "With a JSON schema",
     response_format={
