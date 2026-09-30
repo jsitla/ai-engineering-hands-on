@@ -4,3 +4,9 @@ __pycache__/
 *.pyc
 .DS_Store
 runs/
+db/
+traces.jsonl
+embeddings_cache.json
+memory.json
+adapter/
+ep28-images/*.png

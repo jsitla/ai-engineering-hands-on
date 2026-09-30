@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "northwind-home": {
+      "command": "C:\\path\\to\\ai-engineering-hands-on\\.venv\\Scripts\\python.exe",
+      "args": ["C:\\path\\to\\ai-engineering-hands-on\\ep25-mcp-server\\server.py"]
+    }
+  }
+}

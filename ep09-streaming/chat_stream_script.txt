@@ -1,0 +1,3 @@
+Hi! Give me one tip for learning Python.
+Thanks! And one more?
+quit

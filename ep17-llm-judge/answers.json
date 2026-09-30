@@ -1,0 +1,156 @@
+{
+ "A: vector search, 1 chunk": [
+  {
+   "question": "How much does it cost to deliver a sofa?",
+   "reply": "The delivery of a sofa costs a flat fee of 39 euros, regardless of the order total.",
+   "pass": true
+  },
+  {
+   "question": "How long do I have to send something back?",
+   "reply": "You have 30 days from the date of delivery to return a product.",
+   "pass": true
+  },
+  {
+   "question": "My lamp arrived broken. What should I do?",
+   "reply": "Contact customer service with your order number and they will repair, replace, or refund your lamp, as it is within the 2-year warranty period.",
+   "pass": false
+  },
+  {
+   "question": "Can I pay in monthly instalments?",
+   "reply": "No, we do not offer payment in instalments. Prices on the website include VAT.",
+   "pass": true
+  },
+  {
+   "question": "How long is a gift card valid?",
+   "reply": "A gift card is valid for 2 years from the date of purchase.",
+   "pass": true
+  },
+  {
+   "question": "How long is the password reset link valid?",
+   "reply": "The password reset link is valid for 1 hour.",
+   "pass": true
+  },
+  {
+   "question": "Is the chat open on Saturday?",
+   "reply": "Yes, the chat is open on Saturdays from 9:00 to 12:00.",
+   "pass": true
+  },
+  {
+   "question": "When do I get my money back after a return?",
+   "reply": "You will receive your refund within 14 days after the returned product reaches our warehouse. The refund will be processed back to the original payment method used for the order.",
+   "pass": true
+  },
+  {
+   "question": "Why was 6.90 euros taken off my refund?",
+   "reply": "The 6.90 euros was deducted from your refund because you are not from Slovenia, and according to Northwind Home's return policy, a return shipping cost of 6.90 euros is deducted from the refund for countries other than Slovenia.",
+   "pass": true
+  },
+  {
+   "question": "Where do I enter my VAT number?",
+   "reply": "You can enter your VAT number in the account settings before placing the order.",
+   "pass": true
+  },
+  {
+   "question": "Can I combine two discount codes?",
+   "reply": "No, you cannot combine two discount codes, as only one discount code can be used per order.",
+   "pass": true
+  },
+  {
+   "question": "How long do you keep my invoices?",
+   "reply": "We keep your invoices for 10 years by law, as required by the relevant regulations.",
+   "pass": true
+  },
+  {
+   "question": "Do you sell garden furniture?",
+   "reply": "I don't know, that's not in the handbook.",
+   "pass": true
+  },
+  {
+   "question": "What is your phone number?",
+   "reply": "I don't know, that's not in the handbook.",
+   "pass": true
+  },
+  {
+   "question": "Do you deliver to Germany?",
+   "reply": "Yes, Northwind Home delivers to Germany. Shipping costs 4.90 euros per order, and shipping is free for orders over 50 euros.",
+   "pass": true
+  }
+ ],
+ "B: hybrid search, 3 chunks": [
+  {
+   "question": "How much does it cost to deliver a sofa?",
+   "reply": "The delivery of a large item, such as a sofa, costs a flat fee of 39 euros, and does not include shipping costs.",
+   "pass": true
+  },
+  {
+   "question": "How long do I have to send something back?",
+   "reply": "You have 14 days from the date of delivery to report a damaged or faulty product.",
+   "pass": false
+  },
+  {
+   "question": "My lamp arrived broken. What should I do?",
+   "reply": "Take a photo of the damage and report it within 14 days of delivery, and Northwind Home will send a free replacement or give you a full refund.",
+   "pass": true
+  },
+  {
+   "question": "Can I pay in monthly instalments?",
+   "reply": "I don't know, that's not in the handbook.",
+   "pass": true
+  },
+  {
+   "question": "How long is a gift card valid?",
+   "reply": "A gift card is valid for 2 years from the date of purchase.",
+   "pass": true
+  },
+  {
+   "question": "How long is the password reset link valid?",
+   "reply": "The password reset link is valid for 1 hour.",
+   "pass": true
+  },
+  {
+   "question": "Is the chat open on Saturday?",
+   "reply": "Yes, the chat is open on Saturdays from 9:00 to 12:00.",
+   "pass": true
+  },
+  {
+   "question": "When do I get my money back after a return?",
+   "reply": "You will get your money back within 14 days after the returned product reaches our warehouse.",
+   "pass": true
+  },
+  {
+   "question": "Why was 6.90 euros taken off my refund?",
+   "reply": "The 6.90 euros was taken off your refund because you returned items from a country other than Slovenia, and according to the shop's policy, a return shipping cost of 6.90 euros is deducted from the refund for countries other than Slovenia.",
+   "pass": true
+  },
+  {
+   "question": "Where do I enter my VAT number?",
+   "reply": "To enter your VAT number, go to the account settings on the Northwind Home website and look for the \"Company Information\" section, where you can add your company's VAT number.",
+   "pass": true
+  },
+  {
+   "question": "Can I combine two discount codes?",
+   "reply": "No, you cannot combine two discount codes, unless the code specifically says so.",
+   "pass": true
+  },
+  {
+   "question": "How long do you keep my invoices?",
+   "reply": "We keep your invoices for 10 years by law, and we delete your personal data within 30 days of account deletion.",
+   "pass": true
+  },
+  {
+   "question": "Do you sell garden furniture?",
+   "reply": "I don't know, that's not in the handbook.",
+   "pass": true
+  },
+  {
+   "question": "What is your phone number?",
+   "reply": "I don't know, that's not in the handbook. There is no mention of a phone number in the provided context.",
+   "pass": true
+  },
+  {
+   "question": "Do you deliver to Germany?",
+   "reply": "No, we do not deliver to Germany. Our delivery areas are limited to Slovenia, Croatia, Austria, and Italy.",
+   "pass": true
+  }
+ ]
+}

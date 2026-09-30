@@ -1,0 +1,5 @@
+Hi, I'm Maja. My email is maja.k@example.com, and I live in Graz, Austria.
+Which of my orders cost more than 50 euros?
+The vase from that order arrived broken. What should I do?
+How long will delivery take to me?
+quit

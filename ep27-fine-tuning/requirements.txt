@@ -1,0 +1,5 @@
+# Episode 27 only. Install torch first, from https://pytorch.org (pick your system;
+# with an NVIDIA card, choose the CUDA version), then:
+transformers>=4.56
+peft>=0.13
+accelerate>=0.34
